@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Lstor - Sugar | Countdown to inifinity</title>
+</head>
+
+<body>
+
+<h1 id="days">0</h1>
+<p>days since chocolate or cake</p>
+
+<script type="text/javascript">
+    var startDate = new Date(2013, 1, 3);
+    var one_day_in_ms = 1000 * 3600 * 24;
+    var today = new Date();
+
+    number = document.getElementById("days");
+    days = Math.ceil((today.getTime() - startDate.getTime())/one_day_in_ms) + 1;
+    number.innerHTML = days;
+</script>
+
+
+</body>
+</html>
