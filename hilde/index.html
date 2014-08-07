@@ -38,18 +38,24 @@
             <h1 id="days">0</h1>
             <p>dager uten sjokolade!</p>
         </section>
-        <footer><small><i>siden 5. august 2014</i></small></footer>
+        <footer><small><i>siden 5. august 2014, s&aring; det er <b
+        id="left">0</b> dager igjen til 6. september!</i></small></footer>
 
         <script type="text/javascript">
-            var startDate = new Date(2014, 7, 6);
+            var daysBetween = function (from, to) {
+                var one_day_in_ms = 1000 * 3600 * 24;
+                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms);
+            }
 
-            var one_day_in_ms = 1000 * 3600 * 24;
             var today = new Date();
-
+            var startDate = new Date(2014, 7, 5);
+            var endDate = new Date(2014, 8, 6);
             number = document.getElementById("days");
-            days = Math.ceil((today.getTime() - startDate.getTime())/one_day_in_ms) + 1;
-            number.innerHTML = days;
+            number.innerHTML = daysBetween(startDate, today);
+
+            number = document.getElementById("left");
+            number.innerHTML = daysBetween(today, endDate);
+
         </script>
     </body>
 </html>
-
