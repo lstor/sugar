@@ -19,7 +19,7 @@
             .content {
                 margin: 3em auto;
                 padding: 0 2em 2em 2em;
-                width: 25em;
+                width: 35em;
                 background-color: #428bca;
                 text-align: center;
                 border: 2px solid #428bca;
@@ -37,7 +37,7 @@
         <script type="text/javascript">
             var daysBetween = function (from, to) {
                 var one_day_in_ms = 1000 * 3600 * 24;
-                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms);
+                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms) + 1;
             }
 
             var today = new Date();
