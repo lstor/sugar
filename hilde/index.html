@@ -1,25 +1,48 @@
 <html>
     <head>
         <title>Hilde slutter med sjokolade</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <style>
-            h1 { font-size: 1000%; }
-            p { font-size: 200%; }
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            h1 {
+                font-size: 2000%;
+                padding: 2px;
+                margin: 0px;
+            }
+            p {
+                font-size: 200%;
+                padding: 2px;
+                margin: 0px;
+            }
+            footer {
+                width: 100%;
+                text-align: right;
+            }
             .content {
-                margin: 0 auto;
-                padding: 0;
+                margin: 3em auto;
+                padding: 0 2em 2em 2em;
+                width: 25em;
+                background-color: #428bca;
+                text-align: center;
+                border: 2px solid #428bca;
+                border-radius: 4em;
+                color: white;
             }
         </style>
     </head>
     <body>
-
+    <p>Hilde har g&aring;tt &hellip;</p>
         <section class="content">
             <h1 id="days">0</h1>
-            <p>dager uten sjokolade</p>
+            <p>dager uten sjokolade!</p>
         </section>
+        <footer><small><i>siden 5. august 2014</i></small></footer>
 
         <script type="text/javascript">
             var startDate = new Date(2014, 7, 6);
-    
+
             var one_day_in_ms = 1000 * 3600 * 24;
             var today = new Date();
 
@@ -29,3 +52,4 @@
         </script>
     </body>
 </html>
+
