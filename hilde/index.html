@@ -1,28 +1,31 @@
 <html>
-<head>
-<title>Hilde slutter med sjokolade</title>
-<style>
-    h1 { font-size: 300%; }
-    p { font-size: 200%; }
-</style>
-</head>
+    <head>
+        <title>Hilde slutter med sjokolade</title>
+        <style>
+            h1 { font-size: 1000%; }
+            p { font-size: 200%; }
+            .content {
+                margin: 0 auto;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
 
-<body>
+        <section class="content">
+            <h1 id="days">0</h1>
+            <p>dager uten sjokolade</p>
+        </section>
 
-<h1 id="days">0</h1>
-<p>dager uten sjokolade</p>
-
-<script type="text/javascript">
-    var startDate = new Date(2014, 7, 6);
+        <script type="text/javascript">
+            var startDate = new Date(2014, 7, 6);
     
-    var one_day_in_ms = 1000 * 3600 * 24;
-    var today = new Date();
+            var one_day_in_ms = 1000 * 3600 * 24;
+            var today = new Date();
 
-    number = document.getElementById("days");
-    days = Math.ceil((today.getTime() - startDate.getTime())/one_day_in_ms) + 1;
-    number.innerHTML = days;
-</script>
-
-
-</body>
+            number = document.getElementById("days");
+            days = Math.ceil((today.getTime() - startDate.getTime())/one_day_in_ms) + 1;
+            number.innerHTML = days;
+        </script>
+    </body>
 </html>
