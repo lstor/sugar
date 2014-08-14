@@ -1,0 +1,51 @@
+
+
+<html>
+    <head>
+        <title>Godtefri Silje</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            h1 {
+                font-size: 2000%;
+                padding: 2px;
+                margin: 0px;
+            }
+            p {
+                font-size: 200%;
+                padding: 2px;
+                margin: 0px;
+            }
+            .content {
+                margin: 3em auto;
+                padding: 2em;
+                width: 40em;
+                background-color: #428bca;
+                text-align: center;
+                border: 1px solid #428bca;
+                border-radius: 4em;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="content">
+            <h1 id="days">0</h1>
+            <p>dager uten godteri!</p>
+        </section>
+
+        <script type="text/javascript">
+            var daysBetween = function (from, to) {
+                var one_day_in_ms = 1000 * 3600 * 24;
+                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms);
+            }
+
+            var today = new Date();
+            var startDate = new Date(2014, 7, 11);
+            number = document.getElementById("days");
+            number.innerHTML = daysBetween(startDate, today);
+        </script>
+    </body>
+</html>
