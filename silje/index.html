@@ -39,7 +39,7 @@
         <script type="text/javascript">
             var daysBetween = function (from, to) {
                 var one_day_in_ms = 1000 * 3600 * 24;
-                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms) + 1;
+                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms);
             }
 
             var today = new Date();
