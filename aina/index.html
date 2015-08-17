@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Godtefri</title>
+        
+        <meta name="og:site_name" content="Godtefri">
+        <meta name="og:title" content="Godtefri">
+        <meta name="og:url" content="http://lstor.me/sugar/aina/">
+        <meta name="og:description" content="Dager uten godteri!">
+  
+        <meta name="og:image" content="https://avatars1.githubusercontent.com/u/613821">
+        <meta name="og:locale" content="en_US">
+
+        <meta name="article:author" content="https://github.com/lstor">
+        <meta name="article:publisher" content="https://github.com/lstor">
+        
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='../sugar.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <section class="content content-color-silje">
+            <h1 id="days">0</h1>
+            <p>dager uten godteri!</p>
+        </section>
+
+        <script src="../sugar.js"></script>
+        <script>
+            document.getElementById("days").innerHTML = daysSince(7, 7, 2015);
+        </script>
+    </body>
+</html>
