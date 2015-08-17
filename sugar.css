@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2000%;
+  margin: 0px;
+  padding: 2px;
+}
+
+p {
+  font-size: 200%;
+  margin: 0px;
+  padding: 2px;
+}
+
+.content {
+  background-color: #428bca;
+  border: 1px solid #428bca;
+  border-radius: 4em;
+
+  text-align: center;
+  color: white;
+
+  margin: 3em auto;
+  padding: 2em;
+  width: 45em;
+}
+
+.content-color-silje {
+  background-color: #970c9c;
+  border: 1px solid #970c9c;
+}
