@@ -23,16 +23,9 @@
             <p>days without chocolate, candy or cake!</p>
         </section>
 
+        <script src="sugar.js"></script>
         <script type="text/javascript">
-            var daysBetween = function (from, to) {
-                var one_day_in_ms = 1000 * 3600 * 24;
-                return Math.ceil((to.getTime() - from.getTime())/one_day_in_ms) ;
-            }
-
-            var today = new Date();
-            var startDate = new Date(2013, 1, 1);
-            number = document.getElementById("days");
-            number.innerHTML = daysBetween(startDate, today);
+            document.getElementById("days").innerHTML = daysSince(1, 2, 2013);
         </script>
     </body>
 </html>
