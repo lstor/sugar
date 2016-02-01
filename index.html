@@ -21,11 +21,15 @@
         <section class="content">
             <h1 id="days">0</h1>
             <p>days without chocolate, candy or cake!</p>
+            <small>or <div id="full"></div></small>
         </section>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
         <script src="sugar.js"></script>
+        
         <script type="text/javascript">
             document.getElementById("days").innerHTML = daysSince(1, 2, 2013);
+            document.getElementById("full").innerHTML = moment().preciseDiff(moment('2013-02-01', 'YYYY-MM-DD'));
         </script>
     </body>
 </html>
