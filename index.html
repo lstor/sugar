@@ -28,8 +28,10 @@
         <script src="sugar.js"></script>
         
         <script type="text/javascript">
+        setInterval(function() {
             document.getElementById("days").innerHTML = daysSince(1, 2, 2013);
             document.getElementById("full").innerHTML = moment().preciseDiff(moment('2013-02-01', 'YYYY-MM-DD'));
+        }, 1000);
         </script>
     </body>
 </html>
