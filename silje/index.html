@@ -19,13 +19,20 @@
     </head>
     <body>
         <section class="content content-color-silje">
-            <h1 id="days">0</h1>
+            <h1 id="days">mange</h1>
             <p>dager uten godteri!</p>
+            <small><div id="full"></div></small>
         </section>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
         <script src="../sugar.js"></script>
-        <script>
+        
+        <script type="text/javascript">
+        moment.locale('no');
+        setInterval(function() {
             document.getElementById("days").innerHTML = daysSince(11, 8, 2014);
+            document.getElementById("full").innerHTML = moment().preciseDiff(moment('2014-08-11', 'YYYY-MM-DD'));
+        }, 1000);
         </script>
     </body>
 </html>
