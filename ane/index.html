@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Prosjekt "Kutte ut sjokolade"</title>
+        
+        <meta name="og:site_name" content='Prosjekt "Kutte ut sjokolade"'>
+        <meta name="og:title" content='Prosjekt "Kutte ut sjokolade"'>
+        <meta name="og:url" content="http://lstor.me/sugar/ane/">
+        <meta name="og:description" content="Dager uten sjokolade!">
+  
+        <meta name="og:image" content="https://avatars1.githubusercontent.com/u/613821">
+        <meta name="og:locale" content="en_US">
+
+        <meta name="article:author" content="https://github.com/lstor">
+        <meta name="article:publisher" content="https://github.com/lstor">
+        
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='../sugar.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <section class="content content-color-ane">
+            <h1 id="days">mange</h1>
+            <p>dager uten godteri!</p>
+            <small><br>det er:<div id="full"></div></small>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
+        <script src="../sugar.js"></script>
+        
+        <script type="text/javascript">
+        moment.locale('no');
+        setInterval(function() {
+            document.getElementById("days").innerHTML = daysSince(18, 5, 2017);
+            document.getElementById("full").innerHTML = moment().preciseDiff(moment('2017-05-18', 'YYYY-MM-DD'));
+        }, 1000);
+        </script>
+    </body>
+</html>
